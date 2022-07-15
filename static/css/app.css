@@ -1,0 +1,76 @@
+:root {
+  --accent: #8edc9e;
+  --accent-darker: #6ba176;
+  --accent-lighter: #a1f0b1;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-color: #e5e7eb;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--accent);
+  font-family: 'Blokletters Balpen', sans-serif;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.container .pfp {
+  border-radius: 45%;
+  background-color: var(--accent-darker);
+  height: 15vh;
+}
+
+.container .title {
+  margin-top: 1vh;
+  font-size: 6vh;
+}
+.container .description {
+  margin: 0;
+  font-size: 2.5vh;
+}
+
+.container .links {
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.container .links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+  min-width: 7vh;
+  min-height: 7vh;
+  margin: 1vh;
+  transition: all ease .15s;
+  background-color: var(--accent-darker);
+  border-radius: 45%;
+  text-decoration: none;
+}
+
+.container .links a i {
+  font-size: 3.5vh;
+  color: #eeeeee;
+}
+
+.container .links a:hover {
+  transform: scale(1.05);
+}
